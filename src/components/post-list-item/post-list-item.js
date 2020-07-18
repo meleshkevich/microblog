@@ -5,8 +5,8 @@ export default class PostListItem extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            important: false,
-            like: false
+             important: false,
+             like: false
         };
         this.onImportant = this.onImportant.bind(this);
         this.onLike = this.onLike.bind(this);  // refactor without bind ?
@@ -31,11 +31,11 @@ export default class PostListItem extends Component {
 
         let classNames = 'app-list-item d-flex justify-content-between';
         
-        if(important) {
+        if (important) {
             classNames += ' important';
         }
         
-        if(like) {
+        if (like) {
             classNames += ' like';
         }
 
